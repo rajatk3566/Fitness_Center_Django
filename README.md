@@ -1,5 +1,5 @@
 # Fitness Center Membership Management Using FastApi
-  Fitness Center Membership Management web application using Django 
+  Fitness Center Membership Management web application using Django-rest 
   
 # Features Added 
 
@@ -56,4 +56,61 @@ User Endpoints
     └── pytest.ini
     └── requirements.txt
 ```
+
+
+#  To Setup
+
+1. To clone the repository:
+
+```bash
+https://github.com/rajatk3566/Fitness_Center_Django.git
+```
+
+2. To create a virtual environment and activate:
+
+```bash
+python -m venv env
+source .env/bin/activate
+```
+
+3. To Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. To migrate
+
+```bash
+python manage.py makemigrations 
+python manage.py migrate  
+```       
+
+5. To run the application:
+
+```bash
+python manage.py runserver   
+```
+
+
+# Test Suite for Fitness Center Membership Management (FastAPI)
+
+## Overview
+This test suite ensures the correctness of the Fitness Center Membership Management system built with Django-rest. It covers authentication, database interactions, and API responses.
+
+# To Setup 
+
+1) Install dependencies
+
+ ```bash
+pip install -r requirements.txt
+```
+
+2) To run all Tests
+
+```bash
+pytest -v
+```
+
+
 

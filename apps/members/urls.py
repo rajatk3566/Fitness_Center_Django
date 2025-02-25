@@ -1,17 +1,19 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 from .views import (
-    AdminMemberViewSet, 
-    UserMembershipListView, 
+    MembershipStatusView,
+    RenewMembershipView,
+    MembershipHistoryView,
+    AdminMemberViewSet,
+    UserMembershipListView,
     MembershipCreateView
 )
 
-# router = DefaultRouter()
-# router.register(r'members', AdminMemberViewSet) 
-
 urlpatterns = [
-    path('members/', AdminMemberViewSet.as_view({'get': 'list'}), name='members'),
-    path('memberships/', UserMembershipListView.as_view(), name='membership-list'), 
-    path('memberships/create/', MembershipCreateView.as_view(), name='membership-create'),  
-]
+    path("admin/members/", AdminMemberViewSet.as_view({'get': 'list'}), name="members"),
+    path("members/", MembershipStatusView.as_view(), name="membership_status"),
+    path("members/renew/", RenewMembershipView.as_view(), name="renew_membership"),
+    path("members/history/", MembershipHistoryView.as_view(), name="membership_history"),
 
+    path("admin/memberships/", UserMembershipListView.as_view(), name="admin_membership_list"),
+    path("admin/memberships/create/", MembershipCreateView.as_view(), name="admin_create_membership"),
+]

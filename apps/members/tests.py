@@ -10,12 +10,11 @@ class TestAdmin:
         """Test that admin flag is correctly set"""
        
         assert regular_user.is_admin is False
-        
         assert admin_user.is_admin is True
     
     def test_admin_login_to_admin_site(self, client, admin_user):
         """Test admin user can log in to the admin site"""
-       
+    
         login_successful = client.login(
             username='adminuser',
             password='TestPassword123!'
@@ -48,11 +47,7 @@ class TestAdmin:
         assert admin_user.is_staff is True
 
 
-
-
 User = get_user_model()
-pytestmark = pytest.mark.django_db  
-
 class TestMembership:
     def test_member_creation(self, member, regular_user):
         """Test member is created correctly"""

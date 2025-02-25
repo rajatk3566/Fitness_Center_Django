@@ -1,4 +1,4 @@
-# Fitness Center Membership Management Using FastApi
+# Fitness Center Membership Management Using Django
   Fitness Center Membership Management web application using Django-rest 
   
 # Features Added 
@@ -93,7 +93,7 @@ python manage.py runserver
 ```
 
 
-# Test Suite for Fitness Center Membership Management (FastAPI)
+# Test Suite for Fitness Center Membership Management (Django)
 
 ## Overview
 This test suite ensures the correctness of the Fitness Center Membership Management system built with Django-rest. It covers authentication, database interactions, and API responses.

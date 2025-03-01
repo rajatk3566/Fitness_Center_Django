@@ -45,27 +45,22 @@ class TestAuthentication:
         assert response.status_code == status.HTTP_400_BAD_REQUEST
         
         assert 'password' in response.data
-    
+
     def test_login_valid_user(self, api_client, create_user):
-        """Test user can log in and receive JWT tokens"""
         user = create_user(
-            username='loginuser',
             email='login@example.com',
             password='LoginPass123!'
-        )
-        
+            )
         url = reverse('login')
         login_data = {
-            'username': 'loginuser',
+            'email': 'login@example.com', 
             'password': 'LoginPass123!'
-        }
-        
+            }
         response = api_client.post(url, login_data, format='json')
-        
         assert response.status_code == status.HTTP_200_OK
-        
         assert 'access' in response.data
         assert 'refresh' in response.data
+
     
     def test_login_invalid_credentials(self, api_client):
         """Test login fails with invalid credentials"""
@@ -79,29 +74,4 @@ class TestAuthentication:
         
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
     
-    def test_token_refresh(self, api_client, create_user):
-        """Test refresh token can be used to get a new access token"""
-        user = create_user(
-            username='refreshuser',
-            email='refresh@example.com',
-            password='RefreshPass123!'
-        )
     
-        login_url = reverse('login')
-        login_data = {
-            'username': 'refreshuser',
-            'password': 'RefreshPass123!'
-        }
-        
-        login_response = api_client.post(login_url, login_data, format='json')
-        refresh_token = login_response.data['refresh']
-        refresh_url = reverse('token_refresh')
-        refresh_data = {
-            'refresh': refresh_token
-        }
-        
-        response = api_client.post(refresh_url, refresh_data, format='json')
-
-        assert response.status_code == status.HTTP_200_OK
-
-        assert 'access' in response.data

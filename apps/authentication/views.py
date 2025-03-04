@@ -17,7 +17,6 @@ class RegisterView(generics.CreateAPIView):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
             user = serializer.save()
-
             
             Member.objects.create(
                 user=user,

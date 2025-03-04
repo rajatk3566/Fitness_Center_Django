@@ -4,8 +4,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.utils.timezone import now
 from datetime import timedelta
-from .models import Member, Membership
-from .serializers import MemberSerializer, MembershipSerializer
+from .models import Member, Membership, MembershipHistory
+from .serializers import MemberSerializer,MembershipSerializer, MembershipHistorySerializer, MembershipRenewSerializer
+
+
 
 
 class IsAdminUser(BasePermission):
@@ -79,11 +81,6 @@ class MembershipDeleteView(generics.DestroyAPIView):
 
     def get_queryset(self):
         return Membership.objects.all()
-
-from .models import Membership, MembershipHistory
-from .serializers import MembershipSerializer, MembershipHistorySerializer, MembershipRenewSerializer
-
-
 
 
 

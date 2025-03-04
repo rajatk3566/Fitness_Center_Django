@@ -9,8 +9,6 @@ class Member(models.Model):
     def __str__(self):
         return self.first_name
 
-
-
 class Membership(models.Model):
     MEMBERSHIP_CHOICES = [
         ('MONTHLY', 'Monthly'),

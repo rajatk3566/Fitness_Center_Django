@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Member, Membership
+from .models import Member, Membership, MembershipHistory
+
 
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,11 +20,6 @@ class MembershipSerializer(serializers.ModelSerializer):
         model = Membership
         fields = ['id', 'member', 'member_name', 'start_date', 'end_date', 
                   'membership_type', 'amount_paid', 'payment_date']
-
-
-
-from rest_framework import serializers
-from .models import Membership, MembershipHistory
 
 
 class MembershipRenewSerializer(serializers.Serializer):

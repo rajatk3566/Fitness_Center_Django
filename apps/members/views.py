@@ -23,9 +23,10 @@ class IsUser(BasePermission):
 
 
 class AdminMemberViewSet(viewsets.ModelViewSet):
-    queryset = Member.objects.all()
+    queryset = Member.objects.filter(user__is_staff=False, user__is_superuser=False)
     serializer_class = MemberSerializer
     permission_classes = [IsAuthenticated, IsAdminUser]
+
 
 class AdminMembershipListView(generics.ListAPIView):
     serializer_class = MembershipSerializer
@@ -34,10 +35,6 @@ class AdminMembershipListView(generics.ListAPIView):
     def get_queryset(self):
         return Membership.objects.all()  
     
-class AdminMemberCreateView(generics.CreateAPIView):
-    serializer_class = MemberSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]  
-
 
 class MembershipCreateView(generics.CreateAPIView):
     serializer_class = MembershipSerializer
@@ -88,10 +85,11 @@ class MembershipDeleteView(generics.DestroyAPIView):
 class MembershipRenewViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
 
-    def renew_membership(self, request, pk):
+    def renew_membership(self, request):
         try:
-            membership = Membership.objects.get(id=pk, member__user=request.user)
-            print(membership)
+            # Fetch the membership for the logged-in user
+            membership = Membership.objects.get(member__user=request.user)
+
             serializer = MembershipRenewSerializer(data=request.data)
 
             if serializer.is_valid():
@@ -104,11 +102,12 @@ class MembershipRenewViewSet(viewsets.ViewSet):
                     "message": "Membership renewed successfully",
                     "new_end_date": membership.end_date
                 }, status=status.HTTP_200_OK)
-            
+
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
         except Membership.DoesNotExist:
-            return Response({"error": "Membership not found"}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"error": "No active membership found for this user"}, status=status.HTTP_404_NOT_FOUND)
+
         
 
         
@@ -139,3 +138,21 @@ class RenewHistoryofall(viewsets.ReadOnlyModelViewSet):
             return MembershipHistory.objects.all().order_by("-renewed_on")
 
         return MembershipHistory.objects.filter(member_id=self.request.user.id).order_by("-renewed_on")
+    
+
+
+class MembershipByMemberIDView(generics.ListAPIView):
+    serializer_class = MembershipSerializer
+    permission_classes = [IsAuthenticated]  # Only authenticated users can access
+
+    def get_queryset(self):
+        try:
+            # Fetch the Member instance linked to the logged-in user
+            member = Member.objects.get(user=self.request.user)
+            return Membership.objects.filter(member=member)  # Fetch memberships for this member
+        
+        except Member.DoesNotExist:
+            return Membership.objects.none()  # Return empty queryset if no Member found
+
+ 
+

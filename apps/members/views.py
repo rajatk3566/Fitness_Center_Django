@@ -118,10 +118,24 @@ class MembershipHistoryViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = MembershipHistorySerializer
 
     def get_queryset(self):
-        member_id = self.kwargs.get("member_id")  
+        member_id = self.request.user.id 
         
         if member_id:
             return MembershipHistory.objects.filter(member_id=member_id).order_by("-renewed_on")
         
         return MembershipHistory.objects.none()  
 
+
+class RenewHistoryofall(viewsets.ReadOnlyModelViewSet):
+    permission_classes = [IsAuthenticated,IsAdminUser]
+    serializer_class = MembershipHistorySerializer
+
+    def get_queryset(self):
+        """
+        If the user is an admin, return the full membership history table.
+        Otherwise, return only the logged-in user's history.
+        """
+        if self.request.user.is_staff:  # Check if user is an admin/staff
+            return MembershipHistory.objects.all().order_by("-renewed_on")
+
+        return MembershipHistory.objects.filter(member_id=self.request.user.id).order_by("-renewed_on")

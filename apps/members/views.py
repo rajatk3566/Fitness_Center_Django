@@ -25,13 +25,16 @@ class AdminMemberViewSet(viewsets.ModelViewSet):
     serializer_class = MemberSerializer
     permission_classes = [IsAuthenticated, IsAdminUser]
 
-
-class UserMembershipListView(generics.ListAPIView):
+class AdminMembershipListView(generics.ListAPIView):
     serializer_class = MembershipSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated] 
 
     def get_queryset(self):
-        return Membership.objects.filter(member__user=self.request.user)
+        return Membership.objects.all()  
+    
+class AdminMemberCreateView(generics.CreateAPIView):
+    serializer_class = MemberSerializer
+    permission_classes = [IsAuthenticated, IsAdminUser]  
 
 
 class MembershipCreateView(generics.CreateAPIView):
@@ -39,85 +42,89 @@ class MembershipCreateView(generics.CreateAPIView):
     permission_classes = [IsAuthenticated, IsAdminUser]
 
     def post(self, request, *args, **kwargs):
-        user_id = request.data.get("member")
-        if not user_id:
-            return Response({"error": "User ID is required"}, status=400)
+        member_id = request.data.get("member") 
+        if not member_id:
+            return Response({"error": "Member ID is required"}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
-            member = Member.objects.get(user__id=user_id)
-        except Member.DoesNotExist:
-            return Response({"error": "Member not found"}, status=404)
-
-        serializer = self.get_serializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save(member=member)
-            return Response({
-                "message": "Membership created successfully",
-                "membership": serializer.data
-            }, status=201)
-        return Response(serializer.errors, status=400)
-
-
-#For the User
-
-class MembershipStatusView(APIView):
-    permission_classes = [IsAuthenticated] 
-
-    def get(self, request):
-        try:
-            member = Member.objects.get(user=request.user)
-            serializer = MemberSerializer(member)
-            return Response(serializer.data)
-        except Member.DoesNotExist:
-            return Response({"error": "Membership not found"}, status=status.HTTP_404_NOT_FOUND)
-
-class RenewMembershipView(APIView):
-    permission_classes = [IsAuthenticated, IsUser]  
-    def post(self, request):
-        try:
-            member = Member.objects.get(user=request.user)
+            member = Member.objects.get(id=member_id)  
         except Member.DoesNotExist:
             return Response({"error": "Member not found"}, status=status.HTTP_404_NOT_FOUND)
 
+        active_membership = Membership.objects.filter(member=member, end_date__gte=now().date()).exists()
+        if active_membership:
+            return Response({"error": "User already has an active membership"}, status=status.HTTP_400_BAD_REQUEST)
 
-        membership = Membership.objects.filter(member=member).order_by("-end_date").first()
-        if not membership:
-            return Response({"error": "No active membership found"}, status=status.HTTP_404_NOT_FOUND)
-        
-        new_start = max(membership.end_date, now().date())
-        membership.end_date = new_start + timedelta(days=30)
-        membership.save()
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save(member=member)  
+            return Response({
+                "message": "Membership created successfully",
+                "membership": serializer.data
+            }, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
 
-        return Response({
-            "message": "Membership renewed successfully",
-            "new_end_date": membership.end_date
-        }, status=status.HTTP_200_OK)
+class MembershipUpdateView(generics.UpdateAPIView):
+    serializer_class = MembershipSerializer
+    permission_classes = [IsAuthenticated, IsAdminUser]
 
-class MembershipHistoryView(APIView):
-    permission_classes = [IsAuthenticated]  
+    def get_queryset(self):
+        return Membership.objects.all()
 
-    def get(self, request):
+
+class MembershipDeleteView(generics.DestroyAPIView):
+    serializer_class = MembershipSerializer
+    permission_classes = [IsAuthenticated, IsAdminUser]
+
+    def get_queryset(self):
+        return Membership.objects.all()
+
+from .models import Membership, MembershipHistory
+from .serializers import MembershipSerializer, MembershipHistorySerializer, MembershipRenewSerializer
+
+
+
+
+
+
+class MembershipRenewViewSet(viewsets.ViewSet):
+    permission_classes = [IsAuthenticated]
+
+    def renew_membership(self, request, pk):
         try:
-            member = Member.objects.get(user=request.user)
-        except Member.DoesNotExist:
+            membership = Membership.objects.get(id=pk, member__user=request.user)
+            print(membership)
+            serializer = MembershipRenewSerializer(data=request.data)
+
+            if serializer.is_valid():
+                renewal_type = serializer.validated_data["renewal_type"]
+                amount_paid = serializer.validated_data["amount_paid"]
+                
+                membership.renew_membership(renewal_type, amount_paid)
+
+                return Response({
+                    "message": "Membership renewed successfully",
+                    "new_end_date": membership.end_date
+                }, status=status.HTTP_200_OK)
+            
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        except Membership.DoesNotExist:
             return Response({"error": "Membership not found"}, status=status.HTTP_404_NOT_FOUND)
+        
 
-        memberships = Membership.objects.filter(member=member).order_by("start_date")
+        
 
-        if not memberships.exists():
-            return Response({"error": "No membership history found"}, status=status.HTTP_404_NOT_FOUND)
+class MembershipHistoryViewSet(viewsets.ReadOnlyModelViewSet):
+    permission_classes = [IsAuthenticated]
+    serializer_class = MembershipHistorySerializer
 
-        history = []
-        for membership in memberships:
-            history.append({
-                "event_type": "membership_start",
-                "date": membership.start_date,
-                "details": "Membership started"
-            })
-            history.append({
-                "event_type": "membership_end",
-                "date": membership.end_date,
-                "details": "Membership ended"
-            })
+    def get_queryset(self):
+        member_id = self.kwargs.get("member_id")  
+        
+        if member_id:
+            return MembershipHistory.objects.filter(member_id=member_id).order_by("-renewed_on")
+        
+        return MembershipHistory.objects.none()  
 
-        return Response(history, status=status.HTTP_200_OK)

@@ -46,7 +46,7 @@ class MembershipCreateView(generics.CreateAPIView):
             return Response({"error": "Member ID is required"}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
-            member = Member.objects.get(id=member_id)  
+            member = Member.objects.get(id=int(member_id))  
         except Member.DoesNotExist:
             return Response({"error": "Member not found"}, status=status.HTTP_404_NOT_FOUND)
 
@@ -87,7 +87,6 @@ class MembershipRenewViewSet(viewsets.ViewSet):
 
     def renew_membership(self, request):
         try:
-            # Fetch the membership for the logged-in user
             membership = Membership.objects.get(member__user=request.user)
 
             serializer = MembershipRenewSerializer(data=request.data)
@@ -143,16 +142,14 @@ class RenewHistoryofall(viewsets.ReadOnlyModelViewSet):
 
 class MembershipByMemberIDView(generics.ListAPIView):
     serializer_class = MembershipSerializer
-    permission_classes = [IsAuthenticated]  # Only authenticated users can access
+    permission_classes = [IsAuthenticated] 
 
     def get_queryset(self):
         try:
-            # Fetch the Member instance linked to the logged-in user
             member = Member.objects.get(user=self.request.user)
-            return Membership.objects.filter(member=member)  # Fetch memberships for this member
+            return Membership.objects.filter(member=member) 
         
         except Member.DoesNotExist:
-            return Membership.objects.none()  # Return empty queryset if no Member found
-
+            return Membership.objects.none()  
  
 

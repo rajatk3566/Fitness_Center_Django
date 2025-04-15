@@ -54,3 +54,10 @@ class LoginView(APIView):
             }, status=200)
 
         return Response({"detail": "Invalid credentials"}, status=401)
+
+
+
+from django.http import JsonResponse
+
+def apm_test_view(request):
+    return JsonResponse({"status": "ok"})

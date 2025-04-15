@@ -1,0 +1,1225 @@
+Watching for file changes with StatReloader
+"POST /api/auth/register/ HTTP/1.1" 201 147
+"POST /api/auth/register/ HTTP/1.1" 201 153
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 154
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 153
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 154
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/register/ HTTP/1.1" 201 153
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+Watching for file changes with StatReloader
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 154
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+"POST /api/auth/register/ HTTP/1.1" 201 154
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"POST /api/auth/register/ HTTP/1.1" 201 155
+"GET /apm-test/ HTTP/1.1" 200 16
+Watching for file changes with StatReloader
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 160
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 66996
+"POST /api/auth/register/ HTTP/1.1" 201 157
+Watching for file changes with StatReloader
+Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: authentication_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/apps/authentication/views.py", line 19, in post
+    user = serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/app/apps/authentication/serializers.py", line 38, in create
+    while User.objects.filter(username=username).exists():
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: authentication_user
+"POST /api/auth/register/ HTTP/1.1" 500 173304
+Not Found: /
+"GET / HTTP/1.1" 404 2389
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2440
+Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: authentication_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/apps/authentication/views.py", line 19, in post
+    user = serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/app/apps/authentication/serializers.py", line 38, in create
+    while User.objects.filter(username=username).exists():
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: authentication_user
+"POST /api/auth/register/ HTTP/1.1" 500 173304
+code 400, message Bad request version ('À\x13À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: authentication_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/apps/authentication/views.py", line 19, in post
+    user = serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/app/apps/authentication/serializers.py", line 38, in create
+    while User.objects.filter(username=username).exists():
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: authentication_user
+"POST /api/auth/register/ HTTP/1.1" 500 173304
+"GET /apm-test/ HTTP/1.1" 200 16
+Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: authentication_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/apps/authentication/views.py", line 19, in post
+    user = serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/app/apps/authentication/serializers.py", line 38, in create
+    while User.objects.filter(username=username).exists():
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: authentication_user
+"POST /api/auth/register/ HTTP/1.1" 500 173304
+Bad Request: /api/auth/register/
+"POST /api/auth/register/ HTTP/1.1" 400 108
+Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: authentication_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/apps/authentication/views.py", line 19, in post
+    user = serializer.save()
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/app/apps/authentication/serializers.py", line 38, in create
+    while User.objects.filter(username=username).exists():
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/usr/local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 211, in execute
+    return self._trace_sql(self.__wrapped__.execute, sql, params)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/instrumentation/packages/dbapi2.py", line 249, in _trace_sql
+    result = method(sql, params)
+  File "/usr/local/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: authentication_user
+"POST /api/auth/register/ HTTP/1.1" 500 172872
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2389
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2440
+"GET /apm-test/ HTTP/1.1" 200 16
+Watching for file changes with StatReloader
+"GET /apm-test/ HTTP/1.1" 200 16
+"GET /apm-test/ HTTP/1.1" 200 16
+"GET /apm-test/ HTTP/1.1" 200 16
+"GET /apm-test/ HTTP/1.1" 200 16
+"GET /apm-test HTTP/1.1" 301 0
+"GET /apm-test/ HTTP/1.1" 200 16
+Not Found: /apm
+"GET /apm HTTP/1.1" 404 2416
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+"GET /apm-test/ HTTP/1.1" 200 16
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+"GET /apm-test/ HTTP/1.1" 200 16
+Not Found: /api/auth/regis
+"POST /api/auth/regis HTTP/1.1" 404 4391
+"GET /apm-test/ HTTP/1.1" 200 16
+Not Found: /apm-
+"GET /apm- HTTP/1.1" 404 2419
+"GET /apm-test HTTP/1.1" 301 0
+"GET /apm-test/ HTTP/1.1" 200 16
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+"GET /apm-test HTTP/1.1" 301 0
+"GET /apm-test/ HTTP/1.1" 200 16
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+"GET /apm-test HTTP/1.1" 301 0
+"GET /apm-test/ HTTP/1.1" 200 16
+"GET /apm-test HTTP/1.1" 301 0
+"GET /apm-test/ HTTP/1.1" 200 16
+"GET /apm-test HTTP/1.1" 301 0
+"GET /apm-test/ HTTP/1.1" 200 16
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+Internal Server Error: /api/auth/register
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/register HTTP/1.1" 500 67000
+Not Found: /apm-tes
+"GET /apm-tes HTTP/1.1" 404 2428
+"GET /apm-test HTTP/1.1" 301 0
+"GET /apm-test/ HTTP/1.1" 200 16
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+"GET /api/auth/login HTTP/1.1" 301 0
+Method Not Allowed: /api/auth/login/
+"GET /api/auth/login/ HTTP/1.1" 405 40
+"GET /api/auth/login HTTP/1.1" 301 0
+Method Not Allowed: /api/auth/login/
+"GET /api/auth/login/ HTTP/1.1" 405 40
+"GET /api/auth/login HTTP/1.1" 301 0
+Method Not Allowed: /api/auth/login/
+"GET /api/auth/login/ HTTP/1.1" 405 40
+"GET /api/auth/login HTTP/1.1" 301 0
+Method Not Allowed: /api/auth/login/
+"GET /api/auth/login/ HTTP/1.1" 405 40
+"GET /api/auth/login HTTP/1.1" 301 0
+Method Not Allowed: /api/auth/login/
+"GET /api/auth/login/ HTTP/1.1" 405 40
+Unauthorized: /api/memberships/
+"GET /api/memberships/ HTTP/1.1" 401 58
+Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.9/site-packages/elasticapm/contrib/django/middleware/__init__.py", line 118, in process_response_wrapper
+    response = wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/usr/local/lib/python3.9/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/auth/login HTTP/1.1" 500 66948
+Unauthorized: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 401 32
+"POST /api/auth/register/ HTTP/1.1" 201 159
+"POST /api/auth/login/ HTTP/1.1" 200 530
+Unauthorized: /api/memberships/
+"GET /api/memberships/ HTTP/1.1" 401 58
+"GET /api/memberships/ HTTP/1.1" 200 2
+"GET /api/memberships/ HTTP/1.1" 200 2
+"GET /api/memberships HTTP/1.1" 301 0
+"GET /api/memberships/ HTTP/1.1" 200 2
+"GET /api/auth/login HTTP/1.1" 301 0
+Method Not Allowed: /api/auth/login/
+"GET /api/auth/login/ HTTP/1.1" 405 40
+Method Not Allowed: /api/auth/login/
+"GET /api/auth/login/ HTTP/1.1" 405 40
+Not Found: /apm-te
+"GET /apm-te HTTP/1.1" 404 2425
+"GET /apm-test/ HTTP/1.1" 200 16
+"POST /api/auth/login/ HTTP/1.1" 200 530

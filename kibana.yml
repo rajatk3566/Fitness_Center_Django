@@ -1,0 +1,60 @@
+server.name: kibana
+server.host: "0.0.0.0"
+elasticsearch.hosts: ["https://es01:9200"]
+elasticsearch.ssl.certificateAuthorities: ["/usr/share/kibana/config/certs/ca/ca.crt"]
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "GwtFW++4h7p8-hr9k0Up"
+elastic.apm.secret_token: "supersecrettoken"
+
+server.ssl.certificate: "/usr/share/kibana/config/certs/kibana/kibana.crt"
+server.ssl.key: "/usr/share/kibana/config/certs/kibana/kibana.key"
+server.ssl.certificateAuthorities: ["/usr/share/kibana/config/certs/ca/ca.crt"]
+
+
+xpack.security.encryptionKey: "c34d38b3a14956121ff2170e5030b471551370178f43e5626eec58b04a30fae2"
+xpack.encryptedSavedObjects.encryptionKey: "c34d38b3a14956121ff2170e5030b471551370178f43e5626eec58b04a30fae2"
+xpack.reporting.encryptionKey: "c34d38b3a14956121ff2170e5030b471551370178f43e5626eec58b04a30fae2"
+
+
+
+xpack.fleet.packages:
+  - name: fleet_server
+    version: latest
+  - name: system
+    version: latest
+  - name: elastic_agent
+    version: latest
+  - name: apm
+    version: latest
+
+
+xpack.fleet.agentPolicies:
+  - name: Fleet-Server-Policy
+    id: fleet-server-policy
+    namespace: default
+    monitoring_enabled: 
+      - logs
+      - metrics
+    package_policies:
+      - name: fleet_server-1
+        package:
+          name: fleet_server
+      - name: system-1
+        package:
+          name: system
+      - name: elastic_agent-1
+        package:
+          name: elastic_agent
+      - name: apm-1
+        package:
+          name: apm
+        inputs:
+        - type: apm
+          enabled: true
+          vars:
+          - name: host
+            value: 0.0.0.0:8200
+          - name: secret_token
+            value: "supersecrettoken"
+
+  

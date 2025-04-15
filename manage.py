@@ -3,6 +3,9 @@
 import os
 import sys
 
+# 👇 Add this line at the top before Django loads
+import elasticapm
+elasticapm.instrument()
 
 def main():
     """Run administrative tasks."""

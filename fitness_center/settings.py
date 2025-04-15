@@ -27,9 +27,11 @@ SECRET_KEY = 'django-insecure-1tbkdpplthzz=k18(qi3@p$#oap()iwwwxg6hb($psonnsiquv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
+
+from elasticapm.contrib.django.middleware import TracingMiddleware
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -42,8 +44,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'apps.authentication',
     'apps.members',
-     'corsheaders',
-   
+    'corsheaders',
+    'elasticapm.contrib.django',
 ]
 
 
@@ -75,7 +77,19 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'elasticapm.contrib.django.middleware.TracingMiddleware',
 ]
+
+
+ELASTIC_APM = {
+    'SERVICE_NAME': 'my-service-name',
+    'SECRET_TOKEN': 'supersecrettoken',  # Leave it blank if APM has no token
+    'SERVER_URL': 'http://apm-server:8200',
+    'ENVIRONMENT': 'production',
+    'DEBUG': True,
+}
+
+
 
 
 
@@ -154,3 +168,59 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': './webapp_logs/app.log',  
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
+
+
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'custom': {
+#             'format': '[%(asctime)s] %(levelname)s %(method)s %(url)s %(message)s',
+#         },
+#     },
+#     'filters': {
+#         'request_info': {
+#             '()': 'path.to.custom.RequestFilter',
+#         },
+#     },
+#     'handlers': {
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': '/app/logs/app.log',
+#             'formatter': 'custom',
+#             'filters': ['request_info']
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }
+

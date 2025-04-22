@@ -192,35 +192,3 @@ LOGGING = {
 }
 
 
-
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'custom': {
-#             'format': '[%(asctime)s] %(levelname)s %(method)s %(url)s %(message)s',
-#         },
-#     },
-#     'filters': {
-#         'request_info': {
-#             '()': 'path.to.custom.RequestFilter',
-#         },
-#     },
-#     'handlers': {
-#         'file': {
-#             'level': 'DEBUG',
-#             'class': 'logging.FileHandler',
-#             'filename': '/app/logs/app.log',
-#             'formatter': 'custom',
-#             'filters': ['request_info']
-#         },
-#     },
-#     'loggers': {
-#         'django': {
-#             'handlers': ['file'],
-#             'level': 'DEBUG',
-#             'propagate': True,
-#         },
-#     },
-# }
-
